@@ -117,193 +117,27 @@ class HomePage extends StatelessWidget {
                      Row(
                        mainAxisAlignment: MainAxisAlignment.spaceAround,
                        children: [
-                         Column(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           children: [
-                             Row(
-                               children: [
-                                 Container(
-                                   height: 136,
-                                   width: 146,
-                                   decoration: const BoxDecoration(
-                                     boxShadow: [
-                                       BoxShadow(
-                                         color: Color.fromARGB(255, 139, 70, 134),
-                                         blurRadius: 15.0, // soften the shadow
-                                         spreadRadius: 5.0, //extend the shadow
-                                         offset: Offset(
-                                           0.0, // Move to right 5  horizontally
-                                           5.0, // Move to bottom 5 Vertically
-                                         ),
-                                       )
-                                     ],
-                                   ),
-                                   child: Image.asset("assets/monkey.png"),
-                                 ),
-                               ],
+                         Container(
+                           decoration: BoxDecoration(
+                             border: Border.all(
+                               color: Colors.grey,
+                               width: 1.2,
                              ),
-                             Row(
-                               children: [
-                                 Container(
-                                   child: Padding(
-                                       padding: const EdgeInsets.only(left: 10,top: 12,right: 10),
-                                       child:  RichText(
-                                         text: TextSpan(
-                                           children: const <TextSpan>[
-                                             TextSpan(text: 'NFT Bored Bunny', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 11,color:Color.fromARGB(255, 0, 0, 0))),
-                                           ],
-                                         ),
-                                       )
-                                   ),
-                                 ),
-                                 Container(
-                                   height: 16,
-                                   width: 16,
-                                   child: Image.asset("assets/general.png"),
-                                 ),
-                               ],
-                             ),
-                             Row(
-                               children: [
-                                 const Divider(
-                                   height: 20,
-                                   thickness: 5,
-                                   indent: 20,
-                                   endIndent: 0,
-                                   color: Colors.black,
-                                 ),
-                               ],
-                             ),
-                             Row(
-                               children: [
-                                 Padding(
-                                   padding: const  EdgeInsets.only(left: 10,top: 12,right: 10),
-                                   child: RichText(
-                                     text: TextSpan(
-                                       children: const <TextSpan>[
-                                         TextSpan(text: 'Last:', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 11,color:Color.fromARGB(255, 161, 158, 158))),
-                                       ],
-                                     ),
-                                   ),
-                                 ),
-                                 Padding(
-                                   padding: const  EdgeInsets.only(left: 75,top: 12,right: 10),
-                                   child: RichText(
-                                     text: TextSpan(
-                                       children: const <TextSpan>[
-                                         TextSpan(text: '8.2K', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 11,color:Color.fromARGB(255, 0, 0, 0))),
-                                       ],
-                                     ),
-                                   ),
-                                 )
-                               ],
-                             ),
-
-                           ],
-                         ),
-                         Column(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           children: [
-                             Row(
-                               children: [
-                                 Container(
-                                   height: 136,
-                                   width: 146,
-                                   decoration: const BoxDecoration(
-                                     boxShadow: [
-                                       BoxShadow(
-                                         color: Color.fromARGB(255, 166, 123, 176),
-                                         blurRadius: 15.0, // soften the shadow
-                                         spreadRadius: 5.0, //extend the shadow
-                                         offset: Offset(
-                                           0.0, // Move to right 5  horizontally
-                                           5.0, // Move to bottom 5 Vertically
-                                         ),
-                                       )
-                                     ],
-                                   ),
-                                   child: Image.asset("assets/n2.png"),
-                                 ),
-                               ],
-                             ),
-                             Row(
-                               children: [
-                                 Container(
-                                   child: Padding(
-                                       padding: const EdgeInsets.only(left: 10,top: 12,right: 10),
-                                       child:  RichText(
-                                         text: TextSpan(
-                                           children: const <TextSpan>[
-                                             TextSpan(text: 'NFT Bored Bunny', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 11,color:Color.fromARGB(255, 0, 0, 0))),
-                                           ],
-                                         ),
-                                       )
-                                   ),
-                                 ),
-                                 Container(
-                                   height: 16,
-                                   width: 16,
-                                   child: Image.asset("assets/general.png"),
-                                 ),
-                               ],
-                             ),
-                             Row(
-                               children: [
-                                 const Divider(
-                                   height: 20,
-                                   thickness: 5,
-                                   indent: 20,
-                                   endIndent: 0,
-                                   color: Colors.black,
-                                 ),
-                               ],
-                             ),
-                             Row(
-                               children: [
-                                 Padding(
-                                   padding: const  EdgeInsets.only(left: 10,top: 12,right: 10),
-                                   child: RichText(
-                                     text: TextSpan(
-                                       children: const <TextSpan>[
-                                         TextSpan(text: 'Last:', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 11,color:Color.fromARGB(255, 161, 158, 158))),
-                                       ],
-                                     ),
-                                   ),
-                                 ),
-                                 Padding(
-                                   padding: const  EdgeInsets.only(left: 75,top: 12,right: 10),
-                                   child: RichText(
-                                     text: TextSpan(
-                                       children: const <TextSpan>[
-                                         TextSpan(text: '9.2K', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 11,color:Color.fromARGB(255, 0, 0, 0))),
-                                       ],
-                                     ),
-                                   ),
-                                 )
-                               ],
-                             )
-                           ],
-                         ),
-                       ],
-                     ),
-
-                     Container(
-                       margin: EdgeInsets.fromLTRB(25, 40, 0, 0),
-                       child: Row(
-                         mainAxisAlignment: MainAxisAlignment.spaceAround,
-                         children: [
-                           Column(
+                             borderRadius: BorderRadius.circular(10),
+                           ),
+                           child: Column(
                              mainAxisAlignment: MainAxisAlignment.center,
                              children: [
                                Row(
                                  children: [
                                    Container(
-                                     height: 136,
-                                     width: 146,
+                                     margin: EdgeInsets.symmetric(vertical: 10),
+                                     height: 120,
+                                     width: 130,
                                      decoration: const BoxDecoration(
                                        boxShadow: [
                                          BoxShadow(
-                                           color: Color.fromARGB(255, 169, 176, 123),
+                                           color: Color.fromARGB(140, 130, 100, 150),
                                            blurRadius: 15.0, // soften the shadow
                                            spreadRadius: 5.0, //extend the shadow
                                            offset: Offset(
@@ -313,7 +147,7 @@ class HomePage extends StatelessWidget {
                                          )
                                        ],
                                      ),
-                                     child: Image.asset("assets/n3.png"),
+                                     child: Image.asset("assets/monkey.png"),
                                    ),
                                  ],
                                ),
@@ -342,7 +176,7 @@ class HomePage extends StatelessWidget {
                                  children: [
                                    const Divider(
                                      height: 20,
-                                     thickness: 1,
+                                     thickness: 5,
                                      indent: 20,
                                      endIndent: 0,
                                      color: Colors.black,
@@ -352,7 +186,7 @@ class HomePage extends StatelessWidget {
                                Row(
                                  children: [
                                    Padding(
-                                     padding: const  EdgeInsets.only(left: 10,top: 12,right: 10),
+                                     padding: const  EdgeInsets.only(left: 10,top: 12,right: 10,bottom: 15),
                                      child: RichText(
                                        text: TextSpan(
                                          children: const <TextSpan>[
@@ -362,20 +196,30 @@ class HomePage extends StatelessWidget {
                                      ),
                                    ),
                                    Padding(
-                                     padding: const  EdgeInsets.only(left: 75,top: 12,right: 10),
+                                     padding: const  EdgeInsets.only(left: 75,top: 12,right: 10,bottom: 15),
                                      child: RichText(
                                        text: TextSpan(
                                          children: const <TextSpan>[
-                                           TextSpan(text: '9.2K', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 11,color:Color.fromARGB(255, 0, 0, 0))),
+                                           TextSpan(text: '8.2K', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 11,color:Color.fromARGB(255, 0, 0, 0))),
                                          ],
                                        ),
                                      ),
                                    )
                                  ],
                                ),
+
                              ],
                            ),
-                           Column(
+                         ),
+                         Container(
+                           decoration: BoxDecoration(
+                             border: Border.all(
+                               color: Colors.grey,
+                               width: 1.2,
+                             ),
+                             borderRadius: BorderRadius.circular(10),
+                           ),
+                           child: Column(
                              mainAxisAlignment: MainAxisAlignment.center,
                              children: [
                                Row(
@@ -386,7 +230,7 @@ class HomePage extends StatelessWidget {
                                      decoration: const BoxDecoration(
                                        boxShadow: [
                                          BoxShadow(
-                                           color: Color.fromARGB(255, 111, 112, 104),
+                                           color: Color.fromARGB(100, 130, 100, 150),
                                            blurRadius: 15.0, // soften the shadow
                                            spreadRadius: 5.0, //extend the shadow
                                            offset: Offset(
@@ -396,7 +240,9 @@ class HomePage extends StatelessWidget {
                                          )
                                        ],
                                      ),
-                                     child: Image.asset("assets/n4.png"),
+                                     child: Image.asset("assets/n2.png",
+                                     height: 300,
+                                     ),
                                    ),
                                  ],
                                ),
@@ -421,17 +267,21 @@ class HomePage extends StatelessWidget {
                                    ),
                                  ],
                                ),
-                               const Divider(
-                                 height: 20,
-                                 thickness: 1,
-                                 indent: 0,
-                                 endIndent: 210,
-                                 color: Colors.black,
+                               Row(
+                                 children: [
+                                   const Divider(
+                                     height: 20,
+                                     thickness: 5,
+                                     indent: 20,
+                                     endIndent: 0,
+                                     color: Colors.black,
+                                   ),
+                                 ],
                                ),
                                Row(
                                  children: [
                                    Padding(
-                                     padding: const  EdgeInsets.only(left: 10,top: 12,right: 10),
+                                     padding: const  EdgeInsets.only(left: 10,top: 12,right: 10,bottom: 15),
                                      child: RichText(
                                        text: TextSpan(
                                          children: const <TextSpan>[
@@ -441,7 +291,7 @@ class HomePage extends StatelessWidget {
                                      ),
                                    ),
                                    Padding(
-                                     padding: const  EdgeInsets.only(left: 75,top: 12,right: 10),
+                                     padding: const  EdgeInsets.only(left: 75,top: 12,right: 10,bottom: 15),
                                      child: RichText(
                                        text: TextSpan(
                                          children: const <TextSpan>[
@@ -453,6 +303,199 @@ class HomePage extends StatelessWidget {
                                  ],
                                )
                              ],
+                           ),
+                         ),
+                       ],
+                     ),
+
+                     Container(
+                       margin: EdgeInsets.fromLTRB(25, 40, 0, 0),
+                       child: Row(
+                         mainAxisAlignment: MainAxisAlignment.spaceAround,
+                         children: [
+                           Container(
+                             decoration: BoxDecoration(
+                               border: Border.all(
+                                 color: Colors.grey,
+                                 width: 1.2,
+                               ),
+                               borderRadius: BorderRadius.circular(10),
+                             ),
+                             child: Column(
+                               mainAxisAlignment: MainAxisAlignment.center,
+                               children: [
+                                 Row(
+                                   children: [
+                                     Container(
+                                       margin: EdgeInsets.symmetric(vertical: 10),
+                                       height: 120,
+                                       width: 146,
+                                       decoration: const BoxDecoration(
+                                         boxShadow: [
+                                           BoxShadow(
+                                             color: Color.fromARGB(140, 130, 100, 150),
+                                             blurRadius: 15.0, // soften the shadow
+                                             spreadRadius: 5.0, //extend the shadow
+                                             offset: Offset(
+                                               0.0, // Move to right 5  horizontally
+                                               5.0, // Move to bottom 5 Vertically
+                                             ),
+                                           )
+                                         ],
+                                       ),
+                                       child: Image.asset("assets/n3.png"),
+                                     ),
+                                   ],
+                                 ),
+                                 Row(
+                                   children: [
+                                     Container(
+                                       child: Padding(
+                                           padding: const EdgeInsets.only(left: 10,top: 12,right: 10),
+                                           child:  RichText(
+                                             text: TextSpan(
+                                               children: const <TextSpan>[
+                                                 TextSpan(text: 'NFT Bored Bunny', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 11,color:Color.fromARGB(255, 0, 0, 0))),
+                                               ],
+                                             ),
+                                           )
+                                       ),
+                                     ),
+                                     Container(
+                                       height: 16,
+                                       width: 16,
+                                       child: Image.asset("assets/general.png"),
+                                     ),
+                                   ],
+                                 ),
+                                 Row(
+                                   children: [
+                                     const Divider(
+                                       height: 20,
+                                       thickness: 1,
+                                       indent: 20,
+                                       endIndent: 0,
+                                       color: Colors.black,
+                                     ),
+                                   ],
+                                 ),
+                                 Row(
+                                   children: [
+                                     Padding(
+                                       padding: const  EdgeInsets.only(left: 10,top: 12,right: 10,bottom: 15),
+                                       child: RichText(
+                                         text: TextSpan(
+                                           children: const <TextSpan>[
+                                             TextSpan(text: 'Last:', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 11,color:Color.fromARGB(255, 161, 158, 158))),
+                                           ],
+                                         ),
+                                       ),
+                                     ),
+                                     Padding(
+                                       padding: const  EdgeInsets.only(left: 75,top: 12,right: 10,bottom: 15),
+                                       child: RichText(
+                                         text: TextSpan(
+                                           children: const <TextSpan>[
+                                             TextSpan(text: '9.2K', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 11,color:Color.fromARGB(255, 0, 0, 0))),
+                                           ],
+                                         ),
+                                       ),
+                                     )
+                                   ],
+                                 ),
+                               ],
+                             ),
+                           ),
+
+
+                           Container(
+                             decoration: BoxDecoration(
+                               border: Border.all(
+                                 color: Colors.grey,
+                                 width: 1,
+                               ),
+                               borderRadius: BorderRadius.circular(10),
+                             ),
+                             child: Column(
+                               mainAxisAlignment: MainAxisAlignment.center,
+                               children: [
+                                 Row(
+                                   children: [
+                                     Container(
+                                       margin: EdgeInsets.symmetric(vertical: 10),
+                                       height: 120,
+                                       width: 146,
+                                       decoration: const BoxDecoration(
+                                         boxShadow: [
+                                           BoxShadow(
+                                             color: Color.fromARGB(140, 130, 100, 150),
+                                             blurRadius: 15.0, // soften the shadow
+                                             spreadRadius: 5.0, //extend the shadow
+                                             offset: Offset(
+                                               0.0, // Move to right 5  horizontally
+                                               5.0, // Move to bottom 5 Vertically
+                                             ),
+                                           )
+                                         ],
+                                       ),
+                                       child: Image.asset("assets/n4.png",),
+                                     ),
+                                   ],
+                                 ),
+                                 Row(
+                                   children: [
+                                     Container(
+                                       child: Padding(
+                                           padding: const EdgeInsets.only(left: 10,top: 12,right: 10),
+                                           child:  RichText(
+                                             text: TextSpan(
+                                               children: const <TextSpan>[
+                                                 TextSpan(text: 'NFT Bored Bunny', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 11,color:Color.fromARGB(255, 0, 0, 0))),
+                                               ],
+                                             ),
+                                           )
+                                       ),
+                                     ),
+                                     Container(
+                                       height: 16,
+                                       width: 16,
+                                       child: Image.asset("assets/general.png"),
+                                     ),
+                                   ],
+                                 ),
+                                 const Divider(
+                                   height: 20,
+                                   thickness: 1,
+                                   indent: 0,
+                                   endIndent: 210,
+                                   color: Colors.black,
+                                 ),
+                                 Row(
+                                   children: [
+                                     Padding(
+                                       padding: const  EdgeInsets.only(left: 10,top: 12,right: 10,bottom: 15),
+                                       child: RichText(
+                                         text: TextSpan(
+                                           children: const <TextSpan>[
+                                             TextSpan(text: 'Last:', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 11,color:Color.fromARGB(255, 161, 158, 158))),
+                                           ],
+                                         ),
+                                       ),
+                                     ),
+                                     Padding(
+                                       padding: const  EdgeInsets.only(left: 75,top: 12,right: 10,bottom: 15),
+                                       child: RichText(
+                                         text: TextSpan(
+                                           children: const <TextSpan>[
+                                             TextSpan(text: '9.2K', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 11,color:Color.fromARGB(255, 0, 0, 0))),
+                                           ],
+                                         ),
+                                       ),
+                                     )
+                                   ],
+                                 )
+                               ],
+                             ),
                            ),
                          ],
                        ),
@@ -477,7 +520,15 @@ class HomePage extends StatelessWidget {
                   child: Row(
                     children: [
                       Container(
-                        margin: EdgeInsets.symmetric(horizontal: 15),
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.grey,
+                            width: 1.2,
+                          ),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        padding: EdgeInsets.all(10),
+                        margin: EdgeInsets.symmetric(horizontal: 5),
                         child: Column(
                           children: [
                             Image.asset('assets/b1.png'),
@@ -501,7 +552,15 @@ class HomePage extends StatelessWidget {
                       ),
 
                       Container(
-                        margin: EdgeInsets.symmetric(horizontal: 15),
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.grey,
+                            width: 1.2,
+                          ),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        padding: EdgeInsets.all(10),
+                        margin: EdgeInsets.symmetric(horizontal: 3),
                         child: Column(
                           children: [
                             Image.asset('assets/b2.png'),
@@ -525,7 +584,15 @@ class HomePage extends StatelessWidget {
                       ),
 
                       Container(
-                        margin: EdgeInsets.symmetric(horizontal: 15),
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.grey,
+                            width: 1.2,
+                          ),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        padding: EdgeInsets.all(10),
+                        margin: EdgeInsets.symmetric(horizontal: 3),
                         child: Column(
                           children: [
                             Image.asset('assets/b3.png'),

@@ -33,7 +33,7 @@ class SplashScreen extends StatelessWidget {
                     width:  270,
                     height:  250,
                     child:
-                    Image.asset('assets/img.png', fit:  BoxFit.cover,),
+                    Image.asset('assets/img.png', fit:  BoxFit.fill,),
                   ),
                 ),
               ),
@@ -58,15 +58,25 @@ class SplashScreen extends StatelessWidget {
                 ),
               ),
               Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Color.fromRGBO(105, 74, 3,3)),
+                    borderRadius: BorderRadius.circular(45),
+                  ),
                 width:  90,
                 height:  90,
                 child:
-                IconButton(
-                  iconSize: 40,
-                  icon: Icon(Icons.arrow_forward_outlined),
-                  onPressed: () {
-                    Navigator.pushNamed(context, MyRoutes.home);
-                  },
+                Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(color: Color.fromRGBO(105, 74, 3,3)),
+                      borderRadius: BorderRadius.circular(45),
+                    ),
+                  child: IconButton(
+                    iconSize: 40,
+                    icon: Icon(Icons.arrow_forward_outlined),
+                    onPressed: () {
+                      Navigator.pushNamed(context, MyRoutes.home);
+                    },
+                  ),
                 )
               ),
             ],
