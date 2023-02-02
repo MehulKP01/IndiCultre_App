@@ -79,6 +79,11 @@ flutter:
   - assets/n2.png
   - assets/n3.png
   - assets/n4.png
+  - assets/icon.png
+  - assets/metamask.png
+  - assets/coin.png
+  - assets/walleticon.png
+  - assets/fort.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

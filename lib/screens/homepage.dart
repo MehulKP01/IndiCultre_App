@@ -42,7 +42,182 @@ class HomePage extends StatelessWidget {
                 ),
                 ),
                 onPressed: () {
-                  Navigator.pushNamed(context, MyRoutes.wallet);
+                  // Navigator.pushNamed(context, MyRoutes.wallet);
+                  showModalBottomSheet<void>(
+                    context: context,
+                    builder: (BuildContext context) {
+                      return SizedBox(
+                        height: 450,
+                        child: Column(
+                          children: <Widget>[
+                            Row(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 40,top: 30,right: 8),
+                                  child: Image.asset("assets/icon.png"),
+                                ),
+                                Padding(
+                                    padding: const EdgeInsets.only(left: 8,top: 30,right: 10),
+                                    child:  RichText(
+                                      text: TextSpan(
+                                        children: const <TextSpan>[
+                                          TextSpan(text: 'Connect Wallet', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 18,color:Color.fromARGB(255, 0, 0, 0))),
+                                        ],
+                                      ),
+                                    )
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(left:70,top: 30),
+                                  child: IconButton(
+                                    icon: const Icon(Icons.close),
+                                    onPressed: () => Navigator.pop(context),
+                                  ),
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 40,top: 25,right: 8,bottom: 3),
+                                  child: Image.asset("assets/metamask.png",width: 60,),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 32,right: 0,bottom: 8),
+                                  child:  RichText(
+                                    text: TextSpan(
+                                      children: const <TextSpan>[
+                                        TextSpan(text: ' MetaMask', style: TextStyle(fontSize: 14,color:Color.fromARGB(255, 0, 0, 0))),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 32,left: 100,bottom: 8),
+                                  child:  RichText(
+                                    text: TextSpan(
+                                      children: const <TextSpan>[
+                                        TextSpan(text: ' Connect', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 13,color:Color.fromARGB(255, 192, 135, 49))),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            const Divider(
+                              height: 20,
+                              thickness: 0.25,
+                              indent: 40,
+                              endIndent: 45,
+                              color: Color.fromARGB(255, 153, 150, 150),
+                            ),
+                            Row(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 40,top: 10,right: 8,bottom: 3),
+                                  child: Image.asset("assets/coin.png",width: 60,),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 10,right: 0,bottom: 8),
+                                  child:  RichText(
+                                    text: TextSpan(
+                                      children: const <TextSpan>[
+                                        TextSpan(text: ' CoinBase Wallet', style: TextStyle(fontSize: 14,color:Color.fromARGB(255, 0, 0, 0))),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 10,left: 65,bottom: 8),
+                                  child:  RichText(
+                                    text: TextSpan(
+                                      children: const <TextSpan>[
+                                        TextSpan(text: ' Connect', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 13,color:Color.fromARGB(255, 192, 135, 49))),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            const Divider(
+                              height: 20,
+                              thickness: 0.25,
+                              indent: 40,
+                              endIndent: 45,
+                              color: Color.fromARGB(255, 153, 150, 150),
+                            ),
+                            Row(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 40,top: 10,right: 8,bottom: 3),
+                                  child: Image.asset("assets/walleticon.png",width: 60,),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 10,right: 0,bottom: 8),
+                                  child:  RichText(
+                                    text: TextSpan(
+                                      children: const <TextSpan>[
+                                        TextSpan(text: ' WalletConnect', style: TextStyle(fontSize: 14,color:Color.fromARGB(255, 0, 0, 0))),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 10,left: 75,bottom: 8),
+                                  child:  RichText(
+                                    text: TextSpan(
+                                      children: const <TextSpan>[
+                                        TextSpan(text: ' Connect', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 13,color:Color.fromARGB(255, 192, 135, 49))),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            const Divider(
+                              height: 20,
+                              thickness: 0.25,
+                              indent: 40,
+                              endIndent: 45,
+                              color: Color.fromARGB(255, 153, 150, 150),
+                            ),
+                            Row(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 40,top: 10,right: 8,bottom: 3),
+                                  child: Image.asset("assets/fort.png",width: 60,),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 10,right: 0,bottom: 8),
+                                  child:  RichText(
+                                    text: TextSpan(
+                                      children: const <TextSpan>[
+                                        TextSpan(text: ' Fortmatic', style: TextStyle(fontSize: 14,color:Color.fromARGB(255, 0, 0, 0))),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 10,left: 105,bottom: 8),
+                                  child:  RichText(
+                                    text: TextSpan(
+                                      children: const <TextSpan>[
+                                        TextSpan(text: ' Connect', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 13,color:Color.fromARGB(255, 192, 135, 49))),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            )
+                            // const Text('Modal BottomSheet'),
+                            // ElevatedButton(
+                            //   child: const Text('Close BottomSheet'),
+                            //   onPressed: () => Navigator.pop(context),
+                            // ),
+                          ],
+                        ),
+                      );
+                    },
+                  );
                 },
               )
           ),
@@ -618,45 +793,55 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
 
-                Container(
-                  margin: EdgeInsets.symmetric(vertical: 50),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      Container(
-                        child: Image.asset('assets/home.png',
-                          width:  19,
-                          height:  20,
-                        ),
-                      ),
-                      Container(
-                        child: Image.asset('assets/home2.png',
-                          width:  19,
-                          height:  20,
-                        ),
-                      ),
-                      Container(
-                        child: Image.asset('assets/home3.png',
-                          width:  19,
-                          height:  20,
-                        ),
-                      ),
-                      Container(
-                        child: Image.asset('assets/home4.png',
-                          width:  19,
-                          height:  20,
-                        ),
-                      ),
-                    ],
-                  ),
-                )
-
-
-
+                // Container(
+                //   margin: EdgeInsets.symmetric(vertical: 50),
+                //   child: Row(
+                //     mainAxisAlignment: MainAxisAlignment.spaceAround,
+                //     children: [
+                //       Container(
+                //         child: Image.asset('assets/home.png',
+                //           width:  19,
+                //           height:  20,
+                //         ),
+                //       ),
+                //       Container(
+                //         child: Image.asset('assets/home2.png',
+                //           width:  19,
+                //           height:  20,
+                //         ),
+                //       ),
+                //       Container(
+                //         child: Image.asset('assets/home3.png',
+                //           width:  19,
+                //           height:  20,
+                //         ),
+                //       ),
+                //       Container(
+                //         child: Image.asset('assets/home4.png',
+                //           width:  19,
+                //           height:  20,
+                //         ),
+                //       ),
+                //     ],
+                //   ),
+                // )
               ],
                ),
              ),
       ),
+      bottomNavigationBar: BottomAppBar(
+        child: new Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Expanded(child: IconButton(icon: Icon(Icons.home),onPressed: () {},),),
+            Expanded(child: IconButton(icon: Icon(Icons.show_chart),onPressed: () {},),),
+            Expanded(child: IconButton(icon: Icon(Icons.tab),onPressed: () {},),),
+            Expanded(child: IconButton(icon: Icon(Icons.person),onPressed: () {},),),
+          ],
+        ),
+      ),
+      //   ],
+      // ),
     );
   }
 }
